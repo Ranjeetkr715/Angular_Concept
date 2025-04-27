@@ -8,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+  handleClickEvent(){
+    alert("function called");
+    console.log("print function called")
+    this.otherClickEvent();
+    }
+
+    otherClickEvent(){
+      alert("reset button");
+      console.log("reset the data")
+      }
+
 }

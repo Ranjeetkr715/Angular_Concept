@@ -1,5 +1,5 @@
 <h1>Hello Angular 19 Project</h1>
-<h2>{{title}}</h2>
+<!--<h2>{{title}}</h2>
 <h3>{{name}}</h3>
 <h2>{{3+5}}</h2>
 <h3>{{x+y}}</h3>
@@ -21,7 +21,21 @@
 <h1>Hello signup page</h1>
 
 <button (click)="sum(10,20)">Sum</button>
-<button (click)="updateUsername()">updateData</button>
+<button (click)="updateUsername()">updateData</button>-->
+
+<h1>Counter App</h1>
+<div style="text-align : center">
+  <h2 class="count" >{{value}}</h2>
+  <div>
+<!--    <button class="btn bg-red" (click)="decrement()">Decrement</button>
+    <button class="btn bg-black" (click)="reset()">reset</button>
+    <button class="btn bg-green" (click)="increment()">Increment</button>-->
+
+    <button class="btn bg-red" (click)="handleCounter('minus')">Decrement</button>
+    <button class="btn bg-black" (click)="handleCounter('reset')">reset</button>
+    <button class="btn bg-green" (click)="handleCounter('plus')">Increment</button>
+  </div>
+</div>
 
 
 

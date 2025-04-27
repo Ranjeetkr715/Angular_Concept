@@ -18,6 +18,7 @@ export class AppComponent {
   y=20;
   user1 = 'Ranjeet';
   user2 = "Ranjeet";
+  value = 0;
 
   updateUsername(){
     let x = 30;
@@ -32,5 +33,27 @@ export class AppComponent {
 
   sum (a:number,b:number){
         console.log(a+b);
+    }
+
+/*     decrement(){
+       this.value= this.value - 1;
+      }
+
+    reset(){
+       this.value= 0;
+      }
+
+    increment(){
+       this.value= this.value +1;
+      } */
+
+    handleCounter(val:string){
+      if(val=='minus' && this.value>0){
+        this.value= this.value - 1;
+      }else if (val=='plus'){
+        this.value= this.value +1;
+      }else{
+        this.value= 0;
+       }
     }
 }

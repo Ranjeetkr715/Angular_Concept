@@ -56,4 +56,10 @@ export class AppComponent {
         this.value= 0;
        }
     }
+
+  handleEvent(event :MouseEvent){
+    console.log("Click event", event.type);
+     console.log("Click event", (event.target as Element).classList);
+      console.log("Click event " + (event.target as Element).className);
+    }
 }

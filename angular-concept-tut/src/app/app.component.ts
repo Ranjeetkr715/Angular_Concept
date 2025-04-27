@@ -10,4 +10,8 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'angular-concept-tut';
   name = 'Ranjeet Kumar';
+  x =10;
+  y=20;
+  user1 = 'Ranjeet';
+  user2 = "Ranjeet";
 }

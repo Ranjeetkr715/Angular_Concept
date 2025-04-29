@@ -54,6 +54,26 @@
 </div>
 
 
+<br>
+<br>
+<h1>Get and Set value in Input field</h1>
+<h2>User Name : {{username}}</h2>
+<h2>displayName : {{displayName}}</h2>
+<h2>setName : {{setName}}</h2>
+<input type="text" placeholder="enter the value" (input)="getValue($event)">
+<br>
+<br>
+<button (click)="showName()">Get Value</button>
+<button (click)="setUserName()">Set Value</button>
+<button (click)="resetName()">reset Value</button>
+<hr>
+<hr>
+<!--default template for get and set value-->
+<h2>Email : {{email}}</h2>
+<input type="text" value ='{{email}}' placeholder="enter the email id" #emailField>
+<button (click)='getEmailValue(emailField.value)'>get Email</button>
+<button (click)='setEmailDefault()'>set Email</button>
+
 
 
 

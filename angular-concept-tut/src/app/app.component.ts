@@ -62,4 +62,39 @@ export class AppComponent {
      console.log("Click event", (event.target as Element).classList);
       console.log("Click event " + (event.target as Element).className);
     }
+
+   username ='';
+   displayName : string= '';
+   setName='';
+    getValue(event:Event){
+      const username = (event.target as HTMLInputElement).value;
+      console.log(username);
+      this.username=username;
+    }
+
+  showName(){
+    //setName
+    this.displayName=this.username;
+   }
+
+   setUserName(){
+     //setName
+     this.setName=this.username;
+    }
+
+    resetName(){
+      //setName
+      this.displayName='';
+     }
+
+   email : string='';
+
+   getEmailValue(val:string){
+     this.email=val;
+     }
+
+   setEmailDefault(){
+     this.email='default@gmail.com';
+     }
+
 }

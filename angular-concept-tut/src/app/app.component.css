@@ -28,3 +28,8 @@ border-radius:10px;
 margin : auto;
 margin-bottom:30px;
 }
+
+h1{
+background-color:orange;
+color:red;
+}

@@ -83,6 +83,28 @@
 <!-- Inline style  -->
 <h2 style="color : blue">He is a hardworking employee</h2>
 
+<!--if in angular 19-->
+@if(displayimage){
+ <div style="width : 200px; height : 200px; background-color :green;">
+
+ </div>
+}
+<br>
+<button (click)="hiddenToggle()">Toggle</button>
+
+<b><hr></b>
+<!--if-else in angular 19-->
+<button (click)="colorChangeToggle()">{{toggleColour ? 'show red colour':'show orange colour'}}</button>
+
+@if(toggleColour){
+  <div style="width:200px;height:200px;background-color:red;">
+  </div>
+}
+@else{
+<div style="width:200px;height:200px;background-color:orange;">
+</div>
+}
+
 
 
 

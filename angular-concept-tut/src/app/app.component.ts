@@ -98,6 +98,17 @@ export class AppComponent {
      this.email='default@gmail.com';
      }
 
+/*   if in angular 19 */
+    displayimage =true;
 
+   hiddenToggle(){
+     this.displayimage= !this.displayimage;
+     }
 
+  /*   if-else in angular 19 */
+    toggleColour= true
+    colorChangeToggle(){
+      this.toggleColour= !this.toggleColour;
+      console.log(this.toggleColour)
+      }
 }

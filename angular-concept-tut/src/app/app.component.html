@@ -128,7 +128,28 @@
 <div style="width:200px;height:200px;background-color:black;"></div>
 }
 
+<!--switch condition  in angular 19-->
+<h1>switch condition in angular 19 </h1>
 
+<button (click)="handleColourSwitch('red')">Red</button>
+<button (click)="handleColourSwitch('green')">Blue</button>
+<button (click)="handleColourSwitch('yellow')">Yellow</button>
+<button (click)="handleColourSwitch('gold')">other</button>
+
+  @switch (colorSwitch){
+   @case ('red'){
+    <h1 style="background-color:red;color:white;"> Red Color</h1>
+    }
+    @case ('green'){
+    <h1 style="background-color:blue;color:white;"> Green Color</h1>
+     }
+     @case ('yellow'){
+      <h1 style="background-color:yellow;color:white;"> Yellow Color</h1>
+      }
+      @default {
+       <h1 style="background-color:black;color:white;"> No Color</h1>
+       }
+}
 
 
 

@@ -123,4 +123,11 @@ export class AppComponent {
      this.color= parseInt((event.target as HTMLInputElement).value);
     }
 
+     colorSwitch='red';
+
+     handleColourSwitch(val:string){
+       this.colorSwitch=val;
+       console.log(this.colorSwitch)
+       }
+
 }

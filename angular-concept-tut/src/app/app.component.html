@@ -151,6 +151,21 @@
        }
 }
 
+<!--for loop in angular 19-->
+
+@for(item of users; track item){
+    <h2>{{item}}</h2>
+}
+
+<hr>
+
+@for(student of students ; track student){
+  <span>{{student.name}}</span>
+  <span>{{student.age}}</span>
+  <span>{{student.email}}</span>
+}
+
+
 
 
 

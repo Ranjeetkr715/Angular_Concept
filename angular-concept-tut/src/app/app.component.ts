@@ -130,4 +130,14 @@ export class AppComponent {
        console.log(this.colorSwitch)
        }
 
+  /*   For loop in angular 19 */
+
+  users = ["Ranjeet","Sanjeet","Suchit","Vaanya","Nishant"];
+
+  students=[
+    {name:'Ranjeet',age:29,email:'ranjeet@gmail.com'},
+      {name:'sanjeet',age:26,email:'sanjeet@gmail.com'},
+      {name:'suchit',age:33,email:'suchit@gmail.com'},
+    ]
+
 }

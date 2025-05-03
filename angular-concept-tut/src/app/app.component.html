@@ -84,6 +84,8 @@
 <h2 style="color : blue">He is a hardworking employee</h2>
 
 <!--if in angular 19-->
+<h1>If -else | control flow </h1>
+
 @if(displayimage){
  <div style="width : 200px; height : 200px; background-color :green;">
 
@@ -103,6 +105,27 @@
 @else{
 <div style="width:200px;height:200px;background-color:orange;">
 </div>
+}
+
+<!--else -if  in angular 19-->
+<h1>else -if  | control flow </h1>
+
+<button (click)="changeColour(1)">Red</button>
+<button (click)="changeColour(2)">Blue</button>
+<button (click)="changeColour(3)">Yellow</button>
+<button (click)="changeColour(10)">other</button>
+<input type="text" (input)="handleText($event)">
+@if(color==1){
+<div style="width:200px;height:200px;background-color:red;"></div>
+}
+@else if(color==2){
+<div style="width:200px;height:200px;background-color:blue;"></div>
+}
+@else if(color==3){
+<div style="width:200px;height:200px;background-color:yellow;"></div>
+}
+@else{
+<div style="width:200px;height:200px;background-color:black;"></div>
 }
 
 

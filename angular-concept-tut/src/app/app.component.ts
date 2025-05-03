@@ -111,4 +111,16 @@ export class AppComponent {
       this.toggleColour= !this.toggleColour;
       console.log(this.toggleColour)
       }
+
+  /*   else if in angular 19 */
+    color= 1;
+
+    changeColour(val : number){
+      this.color= val;
+    }
+
+    handleText(event : Event){
+     this.color= parseInt((event.target as HTMLInputElement).value);
+    }
+
 }
